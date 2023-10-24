@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	background-color: #111111;
+	overflow-x: hidden;
+	font-size: 21px;
+	color: white;
+	overflow: hidden;
+}
+@import "./block/header.scss";
+@import "./block/container.scss";
+@import "./block/start.scss";
+@import "./block/works.scss";

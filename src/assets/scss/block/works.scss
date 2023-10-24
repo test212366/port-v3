@@ -1,0 +1,93 @@
+.works {
+	height: 50vh;
+}
+.works__title {
+	font-size: 4.5rem;
+	color: #007bff;
+	transform: translateY(-5rem);
+}
+.works__desc {
+	margin-bottom: 3rem;
+	& span {
+		color: #007bff;
+	}
+}
+.works__link {
+	padding: 1rem;
+}
+#btn {
+	position: relative;
+	z-index: 3;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 9px;
+	transition: all 0.2s ease;
+
+	& span {
+		position: absolute;
+		display: block;
+		background-color: #007bff;
+		&:nth-child(1) {
+			left: 0;
+			bottom: 0;
+			width: 2px;
+			height: 100%;
+			transform: scaleY(0);
+			transform-origin: top;
+			transition: transform 0.25s;
+		}
+		&:nth-child(2) {
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 2px;
+			transform: scaleY(0);
+			transform-origin: right;
+			transition: transform 0.25s;
+		}
+		&:nth-child(3) {
+			right: 0;
+			bottom: 0;
+			width: 2px;
+			height: 100%;
+			transform: scaleY(0);
+			transform-origin: bottom;
+			transition: transform 0.25s;
+		}
+		&:nth-child(4) {
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 2px;
+			transform: scaleY(0);
+			transform-origin: left;
+			transition: transform 0.25s;
+		}
+	}
+	&:hover span:nth-child(1) {
+		transform: scaleY(1);
+		transform-origin: bottom;
+		transition: transform 0.25s;
+	}
+	&:hover span:nth-child(2) {
+		transform: scaleX(1);
+		transform-origin: left;
+		transition: transform 0.25s;
+	}
+	&:hover span:nth-child(3) {
+		transform: scaleX(1);
+		transform-origin: top;
+		transition: transform 0.25s;
+	}
+	&:hover span:nth-child(4) {
+		transform: scaleX(1);
+		transform-origin: right;
+		transition: transform 0.25s;
+	}
+	&:hover {
+		color: #fff;
+	}
+}

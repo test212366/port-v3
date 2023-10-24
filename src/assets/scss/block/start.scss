@@ -1,0 +1,20 @@
+.start__h2 {
+	font-size: 4.5rem;
+	color: #007bff;
+}
+.start__desctip {
+	font-size: 1.8rem;
+	& span {
+		color: #007bff;
+	}
+}
+.start__title {
+	transform: translateY(-4rem);
+	margin-bottom: 100vh;
+}
+.one {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
